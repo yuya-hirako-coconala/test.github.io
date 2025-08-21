@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Pages テストサイト</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo">テストサイト</h1>
+        <ul class="nav-menu">
+          <li><a href="#home">ホーム</a></li>
+          <li><a href="#about">概要</a></li>
+          <li><a href="#features">機能</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1 class="hero-title">GitHub Pages テストサイトへようこそ</h1>
+        <p class="hero-subtitle">これは静的サイトのテスト用ページです</p>
+        <button class="cta-button" onclick="scrollToSection('about')">詳細を見る</button>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>概要</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>このサイトはGitHubPagesの機能をテストするために作成された簡単な静的Webサイトです。</p>
+            <p>HTML5、CSS3、JavaScriptを使用してモダンなデザインと基本的なインタラクティブ機能を実装しています。</p>
+          </div>
+          <div class="about-image">
+            <div class="placeholder-image">
+              <span>📊</span>
+              <p>グラフィック</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>主な機能</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>高速読み込み</h3>
+            <p>静的ファイルなので高速に読み込まれます</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>レスポンシブ対応</h3>
+            <p>モバイルデバイスでも美しく表示されます</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>モダンデザイン</h3>
+            <p>現代的で洗練されたデザインです</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>インタラクティブ</h3>
+            <p>JavaScriptによる動的な機能があります</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>お問い合わせ</h2>
+        <div class="contact-content">
+          <p>このテストサイトに関するご質問やフィードバックがございましたら、お気軽にお声がけください。</p>
+          <button class="contact-button" onclick="showMessage()">メッセージを表示</button>
+          <div id="message" class="hidden message-box">
+            <p>✅ GitHub Pages テストサイトをご覧いただきありがとうございます！</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 GitHubPages テストサイト。All rights reserved.</p>
+      <p>Powered by GitHubPages</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
